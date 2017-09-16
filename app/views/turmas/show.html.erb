@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Faculdade:</strong>
+  <%= @turma.faculdade %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @turma.curso %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @turma.cidade %>
+</p>
+
+<%= link_to 'Edit', edit_turma_path(@turma) %> |
+<%= link_to 'Back', turmas_path %>
