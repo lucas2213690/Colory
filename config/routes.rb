@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :turmas
   resources :users
 
+  get '/sistema' => 'startup#index'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
@@ -16,6 +17,6 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   #root 'startup#index'
-  root 'sessions#new'
+  #root 'sessions#new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

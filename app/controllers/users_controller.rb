@@ -3,16 +3,18 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		user = User.new(user_params)
-		if user.save
+		@user = User.new(user_params)
+		if @user.save
 			session[:user_id] = user.id
-			flash[:notice] = "Usuário criado com sucesso"
-			flash[:color] = "Válido"
-			#redirect_to '/'
+			#flash[:notice] = "Usuário criado com sucesso"
+            #flash[:color] = "Válido"
+            flash[:success] = "Welcome to the Sample App!"
+
+			redirect_to @user
+
 		else
-			flash[:notice] = "Formulário inválido"
-			flash[:color] = "Invalido"
-			redirect_to '/signup'
+			flash.now[:danger] = 'Campos Invalidos'
+			render 'new'
 		end
 	end
 	private

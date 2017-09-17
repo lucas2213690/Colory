@@ -15,3 +15,4 @@
 //= require_tree .
 //= require popper.min
 //= require jquery.min
+//= require bootstrap-sprockets
