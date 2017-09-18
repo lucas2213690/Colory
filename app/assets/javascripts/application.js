@@ -13,6 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require popper.min
-//= require jquery.min
-//= require bootstrap-sprockets
+//= require jquery
+//= require materialize-sprockets
+//= require materialize/extras/nouislider

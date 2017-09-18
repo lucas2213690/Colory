@@ -17,12 +17,13 @@ class SessionsController < ApplicationController
       #session[:user_id] = user.id
       
       redirect_to '/sistema'
+      #flash[:success] = "Welcome to the Sample App!"
       #redirect_to :controller => 'startup', :action => 'index'
   else
     # If user's login doesn't work, send them back to the login form.
-    flash.now[:danger] = 'Email ou Senha invalidos'
+    #flash[:danger] = 'Email ou Senha invalidos'
     #redirect_to '/login'
-    #render 'new'
+    render 'new'
 end
 end
 

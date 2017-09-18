@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
-			session[:user_id] = user.id
+			#session[:user_id] = user.id
 			#flash[:notice] = "Usuário criado com sucesso"
             #flash[:color] = "Válido"
             flash[:success] = "Welcome to the Sample App!"

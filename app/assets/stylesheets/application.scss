@@ -12,7 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *= require simple-sidebar.css
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "materialize";
+@import "materialize/extras/nouislider";
+@import "material_icons"
