@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Sistema-Colory
+>>>>>>> 03598af64e81bce6d4ec5f0f8b49db2c36582e8e
