@@ -1,5 +1,5 @@
 class TurmasController < ApplicationController
-  before_filter :authorize
+  #before_filter :authorize
   before_action :set_turma, only: [:show, :edit, :update, :destroy]
 
   # GET /turmas
